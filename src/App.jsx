@@ -7,7 +7,7 @@ function App() {
     <div className="flex max-h-screen bg-gray-100">
       <Sidebar />
       <div className="flex-1 flex flex-col">
-        <Header />
+        <Header className="hidden md:block" />
         <Portfolio />
       </div>
     </div>
