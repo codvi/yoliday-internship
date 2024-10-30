@@ -63,7 +63,7 @@ const Portfolio = () => {
         </div>
 
         <div className="flex md:flex-row items-center space-x-4 relative w-full md:w-auto">
-          <button className="md:hidden bg-red-500 w-30 text-white p-4 rounded-full fixed bottom-28 left-1/2 transform -translate-x-1/2 z-20 shadow-lg flex items-center space-x-2">
+          <button className="md:hidden z-40 bg-red-500  text-white p-4 rounded-full fixed bottom-24 left-1/2 transform -translate-x-1/2 z-20 shadow-lg flex items-center space-x-2">
             <FaBars size={16} />
             <span>Filter</span>
           </button>
@@ -86,9 +86,9 @@ const Portfolio = () => {
       </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-1 md:flex-col">
-        <div className="h-[80vh] md:h-[68vh] overflow-y-auto border border-gray-300 rounded-md">
+        <div className="h-[90vh] z-10 md:h-[68vh]  overflow-y-auto border border-gray-300 rounded-md">
           {projects.map((project, index) => (
-            <div key={index} className="m-4 shadow-lg rounded-lg overflow-hidden flex relative">
+            <div key={index} className="m-4 shadow-lg md:w-[120vh] rounded-lg overflow-hidden flex relative">
               <img
                 src={project.imageUrl}
                 alt={project.title}

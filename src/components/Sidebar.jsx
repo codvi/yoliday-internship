@@ -14,7 +14,7 @@ const Sidebar = () => {
       <div className="hidden md:block mb-20 text-lg font-semibold">Logo</div>
        {" "}
       <nav className="flex  md:block mt-5 w-full">
-        <ul className="flex justify-between  w-full md:flex-col md:justify-start mt-36">
+        <ul className="flex justify-between w-full md:flex-col md:justify-start mt-36">
           {[
             { icon: <FaTachometerAlt size={24} />, label: "Dashboard" },
             { icon: <FaFolder size={24} />, label: "Portfolio" },
@@ -24,12 +24,12 @@ const Sidebar = () => {
             <li
               key={index}
               onClick={() => handleIconClick(index)}
-              className={`flex-col md:flex md:flex-row items-center p-2 rounded-md transition-all duration-300 
+              className={`flex flex-col md:flex md:flex-row items-center p-2 rounded-md transition-all duration-300 
         ${activeIndex === index ? "text-red-500" : "text-gray-300"} 
         md:hover:bg-gradient-to-l md:hover:from-[#e05434] md:hover:to-[#ffffffb3] md:hover:font-bold`}
             >
-              <span className="md:mr-2">{item.icon}</span>
-              <span className="text-lg md:block">{item.label}</span>
+              <span className="md:mr-2 text-center">{item.icon}</span>
+              <span className="text-lg text-center md:block">{item.label}</span>
             </li>
           ))}
         </ul>
